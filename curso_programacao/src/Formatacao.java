@@ -1,5 +1,6 @@
+import java.util.Locale;
 
-public class Main {
+public class Formatacao {
 
 	public static void main(String[] args) {
 
@@ -8,7 +9,23 @@ public class Main {
 		System.out.println("Resultado multiplicação: " + multiplicacao(5, 3));
 		System.out.println("Resultado divisão: " + Divisao(15.00, 30.00));
 		Double x = 10.566985;
-		System.out.printf("%.2f", x);
+		// printf para formatar numero com casa decimal
+		// Locale, biblioteca de formatação de local = Estados Unidos
+		Locale.setDefault(Locale.US);
+		System.out.printf("Resultado = %.4f", x);
+		System.out.println();
+		Locale.setDefault(Locale.ITALIAN);
+		System.out.printf("Resultado = %.2f", x);
+		/*
+		 * marcadores: %f = ponto flutuante %d = numero inteiro %s = texto %n quebre de
+		 * linha ex:
+		 */
+		System.out.println();
+		int idade = 26;
+		String nome = "Guilherme";
+		Double salario = 3.0000000;
+		Locale.setDefault(Locale.US);
+		System.out.printf("%s tem %d anos e ganha %.3f", nome, idade, salario);
 
 	}
 
