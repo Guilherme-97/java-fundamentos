@@ -9,17 +9,13 @@ public class CondicaoTernaria {
 		// Operador ternário == (condicao) ? True : False
 
 		Scanner sc = new Scanner(System.in);
-		Double plano = 50.00;
-		Double minutos = 100.00;
-		Double custo = 2.00;
 
-		System.out.println("Quantidade de minutos utilizados durante o mês: ");
+		System.out.println("Valor Produto: ");
 		Locale.setDefault(Locale.US);
-		Double usado = sc.nextDouble();
+		Double preco = sc.nextDouble();
 
-		double res = (usado - minutos) * (custo) + plano;
-
-		System.out.println("Valor a ser pago: " + (usado > minutos ? plano : res));
+		System.out.println("Valor a ser pago com desconto: "
+				+ (preco >= 40 ? preco -( 0.12 * preco) : preco -( 0.08 * preco)));
 
 		sc.close();
 
