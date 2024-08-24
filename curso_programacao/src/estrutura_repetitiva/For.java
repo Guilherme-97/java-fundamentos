@@ -13,14 +13,18 @@ public class For {
 		int x = 3;
 		Scanner sc = new Scanner(System.in);
 		for (int i = 0; i < x; i++) {
-
 			Locale.setDefault(Locale.US);
 			double media = sc.nextDouble();
 			mediaFinal += media;
-
 		}
 		double res = mediaFinal / x;
 		System.out.printf("Media final: %.2f ", res);
+System.out.println("");
+		// Decremento
+		for (int a = 10; a <= 0; a--) {
+			System.out.println("Número: " + a);
+		}
+
 		sc.close();
 	}
 }
