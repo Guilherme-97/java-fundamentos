@@ -21,7 +21,7 @@ public class For {
 		System.out.printf("Media final: %.2f ", res);
 System.out.println("");
 		// Decremento
-		for (int a = 10; a <= 0; a--) {
+		for (int a = 10; a >= 0; a--) {
 			System.out.println("Número: " + a);
 		}
 
