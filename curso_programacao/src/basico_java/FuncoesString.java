@@ -39,6 +39,7 @@ public class FuncoesString {
 
 		// Um vetor separando cada nome de string separado por espaço
 		// Caso tire o espaço o vetor vai separar por letra ao invés da palavra
+		// Um vetor com 4 elementos
 		String nome9 = "Watermelon Apple Lemon Orange";
 		String[] vetor = nome9.split(" ");
 		for (int i = 0; i < vetor.length; i++) {
