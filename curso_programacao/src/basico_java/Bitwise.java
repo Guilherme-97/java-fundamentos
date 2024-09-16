@@ -1,8 +1,8 @@
-package basico_java_restricoes;
+package basico_java;
 
 import java.util.Scanner;
 
-public class Base {
+public class Bitwise {
 
 	public static void main(String[] args) {
 		// Para verificar números binarios
